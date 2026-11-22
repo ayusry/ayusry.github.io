@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	html {
+		overflow: hidden;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+ 	}
+
+ 	iframe {
+ 		max-width: 100%;
+ 	}
+</style>
+<style>html,body{height:100%}body{background:#000;margin:0;display:flex;align-items:center}video{width:100%}</style></head>
+	<body> <video width="100%" height="auto" autoplay="" loop="" muted="" playsinline="" style="display: block; pointer-events: none;">
+  <source src="/assets/video/showreel-motion.mp4" type="video/mp4">
+</video>
+<script>
+	const heightObserver = new ResizeObserver(([{ contentRect }]) => {
+		window.parent.postMessage({ action: 'iframeHeightUpdated', height: contentRect.height, id: 'zoQbI3' }, '*');
+	});
+
+	heightObserver.observe(document.documentElement);
+</script>
+
+</body></html>
